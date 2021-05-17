@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<title>SWEETS SHOP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/cheesecake.jpeg");
+  min-height: 85%;
+}
+
+.menu {
+  display: none;
+  background-color:olivedrab;
+  font-family: monospace;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT US</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">OUR MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">LOCATE US</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-black" style="font-size:80px">Sweets<br>Shop</span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">123 Main St, New York, NY 10001</span>
+    </div>
+  </header>  
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-padding w3-wide">ABOUT SWEETS SHOP</span></h5>
+    <p><span>The Sweets Shop was founded in New York City by Ms. Delacruz during the<br>
+        summer of 2019. This shop first began as a small business page on the Instagram<br>
+        social media platform ran by the founder herself at the time. As the business grew<br>
+        bigger and bigger, the founder decided to open up her own local shop, in where the<br>
+        customers that she was able to obtain from the social media page, can come in to<br>
+        buy and eat their sweets, as well as new customers.</span></p>
+    <div class="w3-padding w3-leftbar w3-light-grey">
+    <img src="images/cakepop image.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p>Opening hours:<br>Monday to Friday from 7am to 5pm.<br>Saturday CLOSED<br>Sunday 8am to 4pm.</p>
+    <p>Address:<br>123 Main St, New York, 10001</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-padding w3-wide">OUR MENU</span></h5>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Cake Pops</h5>
+      <p class="w3-text-white">Vanilla, Strawberry, Cheesecake, Rainbow<br>4 Cake Pops 10.50<br>6 Cake Pops 15.50<br>8 Cake Pops 21.50</p><br>
+    
+      <h5>Ice Cream</h5>
+      <p class="w3-text-white">Vanilla 3.00<br>Chocolate 3.00<br>Cookies & Cream 3.50<br>Strawberry 3.50<br>Caramel 4.00</p><br>
+    
+      <h5>Bagels</h5>
+      <p class="w3-text-white">Cream Cheese, PB & Jelly, Butter 2.50</p><br>
+    
+      <h5>French Toast</h5>
+      <p class="w3-text-white">Butter, Syrup,Berries, Strawberries 3.50</p><br>
+    
+      <h5>Pancakes</h5>
+      <p class="w3-text-white">Blueberry, Berry, Oatmeal with syrup, butter and add ins(chocolate chips, sprinkles, berries) 7.50</p>
+
+      <h5>Omelet</h5>
+      <p class="w3-text-white">Cheese, Chives, Vegetables, Mushrooms, Meat, and Onions. 6.50</p>
+
+      <h5>Cakes</h5>
+      <p class="w3-text-white">Cheesecake 3.50<br>Strawberry Cake 4.50<br> Vanilla Cake 4.00<br>Chocolate Cake 4.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-white">Black Coffee 2.50 (with milk 3.50)<br>Iced Coffee 3.00 (with caramel 3.50)</p><br>
+    
+      <h5>Hot Chocolate</h5>
+      <p class="w3-text-white">With milk 4.50<br>Without milk 3.50</p><br>
+    
+      <h5>Lemonade</h5>
+      <p class="w3-text-white">Strawberry, Blackberry Mint, Lemmon 3.00</p><br>
+    
+      <h5>Tea</h5>
+      <p class="w3-text-white">Hot tea 2.50<br>Iced Tea 3.50</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-white">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="images/coffee img.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-padding w3-wide">LOCATE US</span></h5>
+    <p>123 Main St, New York, NY 10001</p>
+    <img src="images/entrance img.jpg" class="w3-image" style="width:100%">
+    <p><span>We hold events through reservations within two weeks in advance. In order for an event to be made, just simply leave us a message with the time and date of your event. We have also made delivery available. Order your sweets from the comfort of your home by contacting us at 718-900-8000.</span></p>
+    <p><strong>Reserve</strong> a table with us, plan an event or leave us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Number of people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2021-May-18T16:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Details about your event" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SUBMIT</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
